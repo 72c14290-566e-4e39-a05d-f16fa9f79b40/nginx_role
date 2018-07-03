@@ -22,4 +22,6 @@
     name: nginx
     state: present
 
-
+- lineinfile:
+    path: /etc/nginx/nginx.conf
+    line: 'daemon off;'
